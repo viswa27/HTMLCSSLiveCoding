@@ -1,0 +1,99 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, rgb(33, 155, 124), rgb(196, 120, 189));
+}
+
+.face {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    height: 200px;
+    width: 200px;
+    background-image: url(./Caricatures-DRAWING-–-STEP-10-1762365296.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid 5px #fff;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px;
+    animation-name: upDown;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes upDown {
+    50% {transform: translatey(-50px);}
+}
+
+.heading {
+    color: #fff;
+    position: absolute;
+    left: 47%;
+    top: 52%;
+}
+
+.linkText {
+    position: absolute;
+    left: 53%;
+    top: 59%;
+}
+
+.allIcons {
+    position: absolute;
+    left: 53%;
+    top: 62%;
+}
+
+.by{
+    position: absolute;
+    left: 54%;
+    top: 65%;
+}
+
+.bottom {
+    display: flex;
+    position: absolute;
+    bottom: 1%;
+}
+
+.bottom .text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    width: 200px;
+    font-weight: 900;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.bottom .like {
+    background-color: rgb(78, 10, 10);
+}
+
+@media screen and (max-width: 600px) {
+    .face {
+        left: 25%;
+        top: 30%;
+    }
+
+    .heading {
+        left: 27%;
+        top: 52%;
+    }
+    
+    .linkText {
+        left: 33%;
+        top: 65%;
+    }
+    
+    .allIcons {
+        left: 33%;
+        top: 68%;
+    }
+    
+    .by{
+        position: absolute;
+        left: 34%;
+        top: 71%;
+    }
+}
